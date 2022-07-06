@@ -1,0 +1,64 @@
+input{
+	border-radius: 10px;
+	line-height: 40px;
+	height: 40px;
+	background-color: white;
+	color: #8b8b8b;
+	padding: 0 20px;
+	margin-right: 13px;
+	font-weight: bold;
+	border: 0;
+
+	
+}
+
+
+input[type="submit"]{
+	background-color: $cor_botao_padrao;
+	color: white;
+	cursor:pointer;
+	transition: .5s;
+
+	&:hover{
+		background-color: #00129c;
+	}
+
+}
+
+.btn{
+	border: 0px;
+	font-size: 17px;
+	line-height: 1;
+	padding: 13px 17px;
+	border-radius: 7px;
+	background-color: $cor_botao_padrao;
+	color: white;
+	cursor: pointer;
+	transition: .5s;
+
+	&:hover{
+		background-color: #00129c;
+	}
+}
+
+.alerta{
+	width: 100%;
+	margin-top: 15px;
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 10px;
+	color: #686868;
+	display: none;
+
+	&.sucesso{
+		background-color: #00bb005e;
+		display: block;
+	}
+
+	&.erro{
+		background-color: #cc040457;
+		display: block;
+	}
+}
+
+

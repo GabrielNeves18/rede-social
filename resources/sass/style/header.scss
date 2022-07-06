@@ -1,0 +1,181 @@
+header{
+	background-color: $cor_padrao;
+	padding: 10px 0;
+	display: inline-flex;
+	width: 100%;
+
+	.content{
+		display: inline-flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+
+		@include desktop{
+			justify-content: space-between;
+
+		}
+		.logo{
+			width: 100%;
+			text-align: center;
+			margin-bottom: 15px;
+
+			@include desktop{
+
+				width: auto;
+				margin-bottom: 0px;
+
+			}
+
+			img{
+				display:block;
+				margin: 0 auto;
+
+			}
+		}
+		.login {
+			form{
+				max-width: 530px;
+				@include desktop{
+					display: inline-flex;
+					flex-wrap: wrap;
+				}
+				input{
+					width: 100%;
+					margin: 0 0 15px 0;
+
+					@include desktop{
+						max-width: 200px;
+						margin-bottom: 0px;
+						margin-right: 15px;
+					}
+				}
+				input[type="submit"]{
+					margin: 0 auto;
+					width: 100%;
+
+					@include desktop{
+						margin: 0;
+						width: auto;
+					}
+				}
+			}
+			.alerta{
+				width: 100%;
+				margin-top: 5px;
+				padding: 0px;
+				font-size: 16px;
+				border-radius: 10px;
+				color: #fff;
+				display: none;
+
+				&.sucesso{
+					background-color: transparent;
+					display: block;
+				}
+
+				&.erro{
+					background-color: transparent;
+					display: block;
+				}
+			}
+		}
+
+		.left{
+			width: 100%;
+			display:  inline-flex;
+			align-items: center;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			@include desktop{
+				width: calc(100% - 290px);
+			}
+
+			.pesquisa{
+				width: calc(100% - 38px);
+				@include desktop{
+					width: auto;
+				}
+				form{
+
+					display: inline-flex;
+					width: 100%;
+					max-width: 500px;
+					input{
+						margin: 0;
+					}
+
+					input[type="submit"]{
+						margin-left: -47px;
+						font-family: 'Monserrat Regular';
+						font-size: 25px;
+					}
+					input[type="text"]{
+						width: 100%;
+						padding-right: 52px;
+						border-radius: 10px;
+						font-size: 14px;
+						color: #8a8a8a;
+
+					}
+				}
+			}
+
+			.login_pessoal{
+				width: auto;
+				display: inline-flex;
+				align-items: center;
+
+				.menu{
+					position: relative;
+					padding: 10px;
+
+
+					ul{
+						opacity: 0;
+						visibility: hidden;
+						position: absolute;
+						background: white;
+						right: calc(100% - 30px);
+						padding: 10px 15px;
+						-webkit-box-shadow: 8px 8px 12px 0px rgba(0,0,0,0.1);
+						-moz-box-shadow: 8px 8px 12px 0px rgba(0,0,0,0.1);
+						box-shadow: 8px 8px 12px 0px rgba(0,0,0,0.1);	
+						top: 100%;
+						z-index: 9;
+						li{
+							padding: 10px 0;
+							a{
+								color: #7b7b7b;
+								font-size: 14px;
+								font-family: 'Montserrat Bold';
+
+								&:hover{
+									color: $cor_padrao;
+								}
+							}
+						}
+					}
+
+					&:hover{
+						ul{
+							opacity: 1;
+							visibility: visible;
+						}
+					}
+				}
+				.foto{
+					max-width: 50px;
+					background-color: #01669c;
+					border-radius: 50%;
+					display: none;
+
+					@include desktop{
+						display: block;
+					}
+
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+.pesquisa{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	.conteudo{
+		width: 100%;
+		padding: 25px 0;
+
+		@include desktop{
+			width: 47.14%;
+		}
+
+		.item{
+			border: 1px solid #dfdfdf;
+			margin-bottom: 35px;
+			border-radius: 5px;
+			padding: 20px 30px;
+			display: inline-flex;
+			flex-wrap: wrap;
+			align-items: flex-start;
+
+			.foto{
+				width: 60px;
+				margin-right: 15px;
+				img{
+					width: 100%;
+					display: block;
+					border-radius: 50%;
+					background-color: #01669c;
+				}
+			}
+
+			.info{
+				width: calc(100% - 75px);
+				p.nome{
+					margin: 15px 0 11px 0;
+					line-height:1;
+					color: #acacac;
+					font-family: 'Montserrat Medium';
+				}
+
+				.bio{
+					font-size: 14px;
+					color: #4b4b4b;
+					font-family: 'Montserrat Regular';
+				}
+			}
+		}
+	}
+}

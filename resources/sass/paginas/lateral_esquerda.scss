@@ -1,0 +1,191 @@
+.lateral_esquerda{
+	width: 100%;
+	padding: 25px 0;
+		input[type="submit"]{
+		text-transform: capitalize;
+	}
+	@include desktop{
+		width: 22.85%;
+	}
+
+	.topo{
+		width: 100%;
+		display: inline-flex;
+		margin-bottom: 25px;
+		align-items: center;
+		
+
+		img{
+			width: 60px;
+			margin-right: 20px;
+			border-radius: 50%;
+			background-color: #01669c;
+		}
+	}
+	.info{
+		width: calc(100% - 80px);
+
+		a{
+
+
+			p{
+				font-size: 16px;
+				color: #acacac;
+				font-family: 'Montserrat Regular';
+				line-height: 1.8;
+			}
+		}
+
+
+		.btn-seguir{
+			margin-top: 1px;
+			width: 65px;
+			height: 30px;
+
+			background-color: #a0c49a;
+			text-transform: capitalize;
+			font-size: large;
+			color: white;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: 1s;
+			&:hover{
+				background-color: green;
+
+			}
+		}
+	}
+
+	.links{
+
+		ul{
+			li{
+
+				font-family: 'Montserrat Regular';
+				color: #b9b9b9;
+				font-size: 16px;
+				border: 1px solid #dcdcdc;
+				padding: 8px 9px;
+				line-height: 1;
+				margin-bottom: 15px;
+				border-radius: 5px;
+				span{
+					float: right;
+				}
+				&:nth-last-child(1)/*pega o ultimo item da lista*/{
+					margin-bottom: 0px;
+				}
+
+				a{
+					&:hover{
+						color: $cor_padrao;
+					}
+				}
+			}
+		}
+	}
+
+	.quem_sou{
+		width: 100%;
+
+		form{
+			margin-top: 25px;
+			width: 100%;
+			position: relative;
+		
+		textarea{
+			resize: none;
+			border: 1px solid #dcdcdc;
+			width: 100%; 
+			padding: 10px 9px;
+			font-size: 15px;
+			color: #b9b9b9;
+			font-family: 'Montserrat Regular';
+			height: 147px;
+			border-radius: 5px 5px 12px 5px;
+			}
+			input[type='submit']{
+				margin-right: 0;
+				display: block;
+				margin-top: -46px;
+				z-index: 0;
+				position: absolute;
+				right: 0;
+			}
+
+			@-moz-document url-prefix(){
+				input[type='submit']{
+					margin-top: -41px;
+				}
+			}
+		}
+	}
+	.quem_ele_e{
+		width: 100%;
+
+		form{
+			margin-top: 25px;
+			width: 100%;
+			position: relative;
+		
+		textarea{
+			resize: none;
+			border: 1px solid #dcdcdc;
+			width: 100%; 
+			padding: 10px 9px;
+			font-size: 15px;
+			color: #b9b9b9;
+			font-family: 'Montserrat Regular';
+			height: 148px;
+			border-radius: 5px 5px 5px 5px;
+			}
+		}
+	}
+
+	.lista_mensagens{
+		width: 100%;
+		.item{
+			border: 1px solid #dfdfdf;
+			margin-bottom: 10px;
+			border-radius: 5px;
+			padding: 20px 15px;
+			display: inline-flex;
+			flex-wrap: wrap;
+			align-items: flex-start;
+			transition: .5s;
+			cursor: pointer;
+			&:hover{
+				background-color: #f1f1f1;
+			}
+
+			.foto{
+				width: 45px;
+				margin-right: 15px;
+				img{
+					width: 100%;
+					display: block;
+					border-radius: 50%;
+					background-color: #01669c;
+				}
+			}
+
+			.info{
+				width: calc(100% - 60px);
+				p.nome{
+					margin: 0px 0 5px 0;
+					line-height:1;
+					color: #acacac;
+					font-family: 'Montserrat Medium';
+					font-size: 14px;
+				}
+
+				.bio{
+					font-size: 14px;
+					color: #4b4b4b;
+					font-family: 'Montserrat Regular';
+				}
+			}
+		}
+	}
+}
+	
